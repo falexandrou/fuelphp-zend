@@ -1,0 +1,23 @@
+Zend framework installer for fuelphp applications
+-------------------------------------------------
+
+* What is this?
+  It's a simple script that enables you to access Zend libraries inside your 
+  FuelPHP application
+
+* Usage
+  - Copy install_zend.php inside your fuelphp application (top level)
+  - Run `php install_zend.php` 
+  - The package is installed under fuel/packages/zend
+  - Zend framework is installed as a git submodule
+
+* Update
+  - Since Zend framework is installed as a git submodule you can run
+    `git submodule update --init` and keep up to date
+  - Remember that you should run `php install_zend.php` after you update 
+    Zend framework so the new version `bootstrap.php` file
+
+* Credits
+  - FuelPHP Framework -> .\m/ [http://www.fuelphp.com]
+  - Zend Framework [http://framework.zend.com/]
+  - Me @falexandrou 
