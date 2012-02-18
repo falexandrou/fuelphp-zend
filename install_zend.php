@@ -42,7 +42,7 @@ if (!is_dir($install_path.'/.zend')) {
         echo "This should be run inside a git repository \n";
         exit;
     }
-    echo "Installing Zend framework under path '".realpath($install_path)."/.zend'\n";
+    echo "Installing Zend framework under path '".realpath(str_replace('/zend', '', $install_path))."/.zend'\n";
     exec('git submodule add https://github.com/zendframework/zf2.git '.$install_path.'/.zend');
 }else{
     echo "Zend framework already found under {$install_path}/.zend\n";
