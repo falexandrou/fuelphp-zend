@@ -6,6 +6,7 @@ Zend framework installer for fuelphp applications
   FuelPHP application
 
 * Usage
+  - Check out this repo on a separate path outside your fuelphp application
   - Copy install_zend.php inside your fuelphp application (top level)
   - Run `php install_zend.php` 
   - The package is installed under fuel/packages/zend
